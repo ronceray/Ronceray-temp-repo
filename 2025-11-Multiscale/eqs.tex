@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\begin{document}
+
+\begin{equation}
+  P(\{\mathbf{X}\}_t|\mathbf{F,D}) = \prod_t P(\Delta\mathbf{X}_t|\mathbf{F(\mathbf{X}_t),D(\mathbf{X}_t)}) \approx \prod_t \exp\left( -\frac{\zeta_t^2}{2}\right)
+\end{equation}
+
+
+\begin{equation}
+  \zeta_t \approx \left(\frac{2\mathbf{D}(\mathbf{X}_t)}{\Delta t}\right)^{-1/2} (\Delta \mathbf{X}_t - \mathbf{F}(\mathbf{X}_t)\Delta t)
+\end{equation}
+
+\begin{equation}
+  P(\{\mathbf{X}\}_t|\mathbf{F,D}) = \prod_t \frac{1}{(4\pi\Delta t \det D(\mathbf{X}_t))^{1/2} }  \exp\left[ -\frac{1}{4}\sum_t \left(\frac{\Delta \mathbf{X}_t}{\Delta t} - \mathbf{F}(\mathbf{X}_t)\right) \mathbf{D}^{-1}(\mathbf{X}_t)\left(\frac{\Delta \mathbf{X}_t}{\Delta t} - \mathbf{F}(\mathbf{X}_t)\right)\right]
+\end{equation}
+
+
+\end{document}
+
